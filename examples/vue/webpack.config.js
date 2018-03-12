@@ -9,7 +9,12 @@ module.exports = {
     filename: 'build.js'
   },
   resolveLoader: {
-    root: path.join(__dirname, 'node_modules'),
+    root: path.join(__dirname, 'node_modules')
+  },
+  resolve: {
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js'
+    }
   },
   module: {
     loaders: [

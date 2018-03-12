@@ -1,7 +1,7 @@
 const ListItem = {
   functional: true,
-  render (h) {
-    return <li>hi</li>
+  render (h, { props }) {
+    return <li>{props.value}</li>
   }
 }
 
@@ -10,17 +10,11 @@ const ListItems = {
   render (h, { props }) {
     return (
       <ul>
-        {props.items.map(() =>
-          <ListItem/>
+        {props.items.map((value, key) =>
+          <ListItem value={value} key={key} />
         )}
       </ul>
     )
-  },
-  props: {
-    items: {
-      type: Array,
-      required: true
-    }
   }
 }
 

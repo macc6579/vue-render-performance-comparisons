@@ -1,15 +1,13 @@
 import React from 'react'
 
-const ListItem = () => {
-  return <li>hi</li>
+const ListItem = props => {
+  return <li>{props.value}</li>
 }
 
 const ListItems = props => {
   return (
     <ul>
-      {props.items.map((_, index) =>
-        <ListItem key={index}/>
-      )}
+      {props.items.map(value => <ListItem key={value} value={value} />)}
     </ul>
   )
 }

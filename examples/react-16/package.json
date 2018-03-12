@@ -8,13 +8,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "serve": "pushstate-server build 8080",
+    "serve": "pushstate-server build 9090",
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
     "query-string": "^5.0.1",
-    "react": "^15.3.1",
-    "react-dom": "^15.3.1"
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   },
   "devDependencies": {
     "babel-eslint": "^6.1.2",
